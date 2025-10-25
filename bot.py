@@ -19,5 +19,6 @@ def send_help(message):
 @bot.message_handler(commands=['me'])
 def send_info(message):
     bot.send_chat_action(message.chat.id, action='typing')
-    bot.reply_to(message, f"اطلاعات اکانت شما 😯\n اسم شما : {message.chat.first_name}\n فامیلی شما : {message.chat.last_name}\n یوسرنیم شما : {message.chat.user_name}\n ایدی شما : {message.chat.id}\n امیدوارم راضی باشید 🥱")
+    bot.reply_to(message, f"اطلاعات اکانت شما 😯\n اسم شما : {message.chat.first_name}\n فامیلی شما : {message.chat.last_name}\n یوسرنیم شما : {message.chat.username}\n ایدی شما : {message.chat.id}\n امیدوارم راضی باشید 🥱")
 bot.polling()
+
