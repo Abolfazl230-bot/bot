@@ -1,6 +1,6 @@
 import telebot
 
-bot = telebot.TeleBot("8295636525:AAFGetVCsM0ScQY4OcfxybvH0g9KNoTEuOw")
+bot = telebot.TeleBot("7957306562:AAGLjSqb2yhx8lIkyX3IRsRd5uvmrumT0bo")
 
 my_button = telebot.types.InlineKeyboardButton("سازنده ربات ", url="https://t.me/V1TOW")
 my_markup = telebot.types.InlineKeyboardMarkup()
@@ -21,4 +21,3 @@ def send_info(message):
     bot.send_chat_action(message.chat.id, action='typing')
     bot.reply_to(message, f"اطلاعات اکانت شما 😯\n اسم شما : {message.chat.first_name}\n فامیلی شما : {message.chat.last_name}\n یوسرنیم شما : {message.chat.username}\n ایدی شما : {message.chat.id}\n امیدوارم راضی باشید 🥱")
 bot.polling()
-
